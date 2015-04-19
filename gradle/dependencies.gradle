@@ -1,0 +1,19 @@
+ext {
+    versions = [:]
+    libraries = [:]
+}
+
+libraries.spring_swagger = [
+        "org.ajar:swagger-spring-mvc-ui:0.2",
+        "com.mangofactory:swagger-springmvc:0.9.0"
+]
+
+def springVersion = '1.2.3.RELEASE'
+libraries.spring_boot = [
+        "org.springframework.boot:spring-boot-starter-web:$springVersion",
+]
+
+libraries.spring_boot_test = [
+        "org.springframework.boot:spring-boot-starter-test:$springVersion",
+        "org.spockframework:spock-spring:1.0-groovy-2.3",
+]
